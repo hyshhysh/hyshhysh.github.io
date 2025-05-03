@@ -191,8 +191,26 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-
+.endtextcon {
+    background-color: whitesmoke;
+    width: auto;
+    text-align: center;
+    padding: 4rem 4rem;
+    
+}
+.endtext {
+    color: black;
+    font-family: 'PressStart2P';
+    text-decoration: none;
+}
+.endtext:hover {
+    text-decoration: underline;
+}
+footer p{
+    font-family: 'PressStart2P';
+    color: whitesmoke;
+    text-align: center;
+}
 @media (max-width: 768px) {
     
     .hero {

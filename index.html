@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero">
+    <section class="hero" id="top">
         <div class="hero-text">
             <h1 class="retro-text">JOSIE LIM</h1>
             <h2>Computer Science & AI<br> Year 3 Student</h2>
@@ -29,8 +29,8 @@
         <div class="container">
             <nav class="menu-options" id="menu-options">
                 <a href="#p1-anchor"><span>P1 HITCHHIKER'S GUIDE TO LIYUE</span></a>
-                <a href="#"><span>P2 MAGAZINE MANAGEMENT SYSTEM</span></a>
-                <a href="#"><span>P3 ENERGY NEXUS</span></a>
+                <a href="#p2-anchor"><span>P2 MAGAZINE MANAGEMENT SYSTEM</span></a>
+                <a href="#p3-anchor"><span>P3 ENERGY NEXUS</span></a>
             </nav>
         </div>
     </section>
@@ -104,9 +104,54 @@
             <div id="modalCaption"></div>
         </div>
     </section>
+    
+    <section class="portfolio-con" id="p3-anchor">
+        <h1>ENERGY NEXUS - DATA STORYTELLING DASHBOARD</h1>
+        <img src="images/icons8-python-48.png" alt="Python Logo">
+        <img src="images/icons8-jupyter-48.png" alt="Jupyter Logo">
+        <img src="images/dash_logo.png" alt="Plotly Dash Logo">
+        
+        <p>An interactive dashboard built with Python, Plotly Dash, and Jupyter for exploring global trends 
+            in renewable energy adoption, investment, affordability, and activism. Created as part of 
+            my Data Visualization & Simulation coursework.<br><br>
+        &gt; Storytelling-driven immersive design<br>
+        &gt; Structured into 6 clear hypotheses to form a logical narrative arc<br>
+        &gt; Each section combines visual panels with analytical commentary<br>
+        &gt; Scroll-based flow and hover tooltips enhance user engagement<br>
+        &gt; Global maps and charts dynamically update based on user filters<br>
+        &gt; Flow of data visualizations and storytelling makes a compelling call to action<br><br>
+            
+        <a href="https://github.com/hyshhysh/renewable-energy-visualisation-dashboard" target="_blank" rel="noopener noreferrer">
+            LINK TO GITHUB REPOSITORY</a><br><br>
+        Click on image to open.</p>
+        
+        <div class="screenshot-grid">
+            <img src="images/en-p1.png" onclick="openModal(this)">
+            <img src="images/en-p2.png" onclick="openModal(this)">
+            <img src="images/en-p3.png" onclick="openModal(this)">
+            <img src="images/en-p4.png" onclick="openModal(this)">
+            <img src="images/en-p5.png" onclick="openModal(this)">
+            <img src="images/en-p6.png" onclick="openModal(this)">
+    
+        </div>
 
+        <!-- Modal container -->
+        <div id="imgModal" class="modal" onclick="closeModal()">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="modalCaption"></div>
+        </div>
+        
+        
+    </section>
+
+    <section class="endtextcon">
+        <a class="endtext" href="#top">BACK TO TOP</a>
+    </section>
+    
+    
 <footer>
-    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <p>&copy; 2025 Josie Lim. All rights reserved.</p>
 </footer>
 <script src="script.js"></script>
 </body>
