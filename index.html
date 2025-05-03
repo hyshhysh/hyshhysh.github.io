@@ -29,26 +29,26 @@
         <div class="container">
             <nav class="menu-options" id="menu-options">
                 <a href="#p1-anchor"><span>P1 HITCHHIKER'S GUIDE TO LIYUE</span></a>
-                <a href="#"><span>P2 GRAND LINE GAZETTE</span></a>
+                <a href="#"><span>P2 MAGAZINE MANAGEMENT SYSTEM</span></a>
                 <a href="#"><span>P3 ENERGY NEXUS</span></a>
             </nav>
         </div>
     </section>
     
     <section class="portfolio-con" id="p1-anchor">
-        <h1>THE HITCHHIKER'S GUIDE TO LIYUE</h1>
+        <h1>HITCHHIKER'S GUIDE TO LIYUE</h1>
         <img src="images/icons8-html5-48.png" alt="HTML5 Logo">
         <img src="images/icons8-css3-48.png" alt="CSS3 Logo">
         <img src="images/icons8-javascript-48.png" alt="JavaScript Logo">
         <p>An immersive fan-made travel guide reimagining the in-game region of Liyue from Genshin Impact as a real-world
-        travel destination. Designed and developed as part of my IT Diploma module.<br><br>
+        travel destination. Designed and developed as part of my IT Diploma multimedia module.<br><br>
         &gt; UI/UX design based on in-game world<br>
         &gt; Frontend development with HTML5, CSS3 and JavaScript<br>
         &gt; Responsive layout and custom interactions<br>
         &gt; Integrated multimedia<br><br>
         <a href="https://github.com/hyshhysh/hitchhikers-guide-to-liyue" target="_blank" rel="noopener noreferrer">
             LINK TO GITHUB REPOSITORY</a><br><br>
-        Click on image to open.</p>
+        Click on image to view.</p>
         
         <div class="screenshot-grid">
             <img src="images/Destinations-page.png" alt="Destinations page header" onclick="openModal(this)">
@@ -60,6 +60,40 @@
             <img src="images/Events-page.png" alt="Events Page" onclick="openModal(this)">
             <img src="images/Event-reg-form-page.png" alt="Event Registration Page" onclick="openModal(this)">
             <img src="images/Handbook-page.png" alt="Handbook Page" onclick="openModal(this)">
+    
+        </div>
+
+        <!-- Modal container -->
+        <div id="imgModal" class="modal" onclick="closeModal()">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="modalCaption"></div>
+        </div>
+    </section>
+    
+    
+    <section class="portfolio-con" id="p2-anchor">
+        <h1>MAGAZINE MANAGEMENT SYSTEM</h1>
+        <img src="images/icons8-java-48.png" alt="Java Logo">
+        <p>A full-featured JavaFX desktop application for managing magazine subscriptions, supplements, 
+            and customers. Built as part of my degree Software Architectures module coursework.<br><br>
+        &gt; Object-oriented MVC architecture<br>
+        &gt; Customer and supplement management (CRUD)<br>
+        &gt; Associate vs Paying customer structure<br>
+        &gt; Monthly billing invoice generation<br>
+        &gt; Data persistence with serialization (.ser files)<br>
+        &gt; Test data loader for quick startup<br><br>
+        <a href="https://github.com/hyshhysh/magazine-management" target="_blank" rel="noopener noreferrer">
+            LINK TO GITHUB REPOSITORY</a><br><br>
+        Click on image to open.</p>
+        
+        <div class="screenshot-grid">
+            <img src="images/magsvc-home.png" alt="Magazine service homepage" onclick="openModal(this)">
+            <img src="images/magsvc-view.png" alt="View supplements, customers and billing details" onclick="openModal(this)">
+            <img src="images/magsvc-create.png" alt="Magazine service create a magazine" onclick="openModal(this)">
+            <img src="images/magsvc-supp.png" alt="View and edit supplements" onclick="openModal(this)">
+            <img src="images/magsvc-pay.png" alt="View and edit paying customers" onclick="openModal(this)">
+            <img src="images/magsvc-ass.png" alt="View and edit associate customers" onclick="openModal(this)">
     
         </div>
 
