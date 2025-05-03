@@ -1,65 +1,90 @@
 @font-face {
-    font-family: "MyFont";
-    src: url('fonts/myfont.woff2') format('woff2');
+    font-family: "pixel-book";
+    src: url('fonts/PixelBook-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url('fonts/PressStart2P.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 body {
+    background-color: #000000;
     margin: 0;
-    font-family: 'MyFont', Arial, sans-serif;
     line-height: 1.6;
 }
 .top-menu {
-    background-color: #333;
+    background-color: #000000;
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    text-align: center;
 }
+
 .container {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: auto auto;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 .nav-menu {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
+
 .nav-menu a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
+    font-family: 'PressStart2P';
 }
 .nav-menu a:hover {
     text-decoration: underline;
 }
-.menu-toggle {
-    display: none;
-    background: none;
-    color: white;
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+.hero-text h1 {
+    color: whitesmoke;
+    font-family: 'pixel-book';
+    letter-spacing: 0.7rem;
+    font-size: 7rem;
+    margin: 0;
+}
+.hero-text h2 {
+    color: whitesmoke;
+    font-family: 'PressStart2P';
     font-size: 1.5rem;
-    border: none;
-    cursor: pointer;
+    margin-top: 0.3rem;
+}
+.hero-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
 }
 
+
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none;
+    
+    .hero {
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 1rem;
-        background-color: #333;
-        padding: 1rem;
-        border-radius: 5px;
+        text-align: center;
     }
     
-    .nav-menu.show {
-        display: flex;
-    }
-    
-    .menu-toggle {
-        display: block;
+    .hero-image img {
+        width: 200px;
     }
 }
