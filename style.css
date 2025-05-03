@@ -203,4 +203,33 @@ body {
     .hero-image img {
         width: 200px;
     }
+    
+    .portfolio-con {
+        padding: 2rem;
+    }
+
+    .portfolio-con h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .portfolio-con p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .screenshot-grid img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .portfolio-con a {
+        word-break: break-word;
+        font-size: 0.85rem;
+    }
 }
