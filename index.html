@@ -10,7 +10,7 @@
 <body>
     <section class="hero">
         <div class="hero-text">
-            <h1>JOSIE LIM</h1>
+            <h1 class="retro-text">JOSIE LIM</h1>
             <h2>Computer Science & AI<br> Year 3 Student</h2>
             <a href="https://github.com/hyshhysh" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="images/icons8-github-32.png" alt="GitHub logo"></a>
@@ -24,16 +24,52 @@
         </div>
     </section>
     
-    <header class="portfolio-nav">
-        <h3>SELECT PORTFOLIO:</h3>
+    <section class="portfolio-nav">
+        <h3 class="header3">SELECT PORTFOLIO:</h3>
         <div class="container">
             <nav class="menu-options" id="menu-options">
-                <a href="#"><span>P1 HITCHHIKER'S GUIDE TO LIYUE</span></a>
+                <a href="#p1-anchor"><span>P1 HITCHHIKER'S GUIDE TO LIYUE</span></a>
                 <a href="#"><span>P2 GRAND LINE GAZETTE</span></a>
                 <a href="#"><span>P3 ENERGY NEXUS</span></a>
             </nav>
         </div>
-    </header>
+    </section>
+    
+    <section class="portfolio-con" id="p1-anchor">
+        <h1>THE HITCHHIKER'S GUIDE TO LIYUE</h1>
+        <img src="images/icons8-html5-48.png" alt="HTML5 Logo">
+        <img src="images/icons8-css3-48.png" alt="CSS3 Logo">
+        <img src="images/icons8-javascript-48.png" alt="JavaScript Logo">
+        <p>An immersive fan-made travel guide reimagining the in-game region of Liyue from Genshin Impact as a real-world
+        travel destination. Designed and developed as part of my IT Diploma module.<br><br>
+        &gt; UI/UX design based on in-game world<br>
+        &gt; Frontend development with HTML5, CSS3 and JavaScript<br>
+        &gt; Responsive layout and custom interactions<br>
+        &gt; Integrated multimedia<br><br>
+        <a href="https://github.com/hyshhysh/hitchhikers-guide-to-liyue" target="_blank" rel="noopener noreferrer">
+            LINK TO GITHUB REPOSITORY</a><br><br>
+        Click on image to open.</p>
+        
+        <div class="screenshot-grid">
+            <img src="images/Destinations-page.png" alt="Destinations page header" onclick="openModal(this)">
+            <img src="images/Destinations-page-2.png" alt="Destinations descriptions" onclick="openModal(this)">
+            <img src="images/Things-to-do-page.png" alt="Things to Do page header" onclick="openModal(this)">
+            <img src="images/Things-to-do-page-2.png" alt="Things to Do descriptions" onclick="openModal(this)">
+            <img src="images/Eat-n-Drink-page.png" alt="Eat & Drink Page" onclick="openModal(this)">
+            <img src="images/Eat-n-Drink-page-2.png" alt="Eat & Drink descriptions" onclick="openModal(this)">
+            <img src="images/Events-page.png" alt="Events Page" onclick="openModal(this)">
+            <img src="images/Event-reg-form-page.png" alt="Event Registration Page" onclick="openModal(this)">
+            <img src="images/Handbook-page.png" alt="Handbook Page" onclick="openModal(this)">
+    
+        </div>
+
+        <!-- Modal container -->
+        <div id="imgModal" class="modal" onclick="closeModal()">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="modalCaption"></div>
+        </div>
+    </section>
 
 <footer>
     <p>&copy; 2025 Your Company. All rights reserved.</p>
